@@ -1,0 +1,72 @@
+/* static/css/styles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Light background for better readability */
+    color: #333; /* Dark text color */
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #007bff; /* Bootstrap primary color */
+}
+
+/* Post List Styles */
+ul {
+    list-style-type: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+li {
+    background: #fff; /* White background for posts */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px;
+    margin: 10px 0; /* Space between posts */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth scale transition */
+}
+
+li:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+}
+
+/* Links */
+a {
+    color: #007bff; /* Bootstrap primary color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styles */
+button {
+    background: #007bff; /* Bootstrap primary color */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    li {
+        margin: 5px; /* Reduce margin on smaller screens */
+    }
+
+    h1 {
+        font-size: 24px; /* Smaller font size for smaller screens */
+    }
+}

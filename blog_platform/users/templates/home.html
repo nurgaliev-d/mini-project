@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">  <!-- Link to your CSS -->
+</head>
+<body>
+    <h1>Welcome to the Blog Platform</h1>
+    <div class="button-container">
+        <a href="{% url 'post_list' %}" class="button">View Blogs</a>
+        <a href="{% url 'user_list' %}" class="button">View Users</a>
+    </div>
+</body>
+</html>

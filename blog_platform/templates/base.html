@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <title>{% block title %}Blog Platform{% endblock %}</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation Section -->
+    <nav class="navbar navbar-light bg-light mb-4">
+        <div class="container">
+            <a href="{% url 'home' %}" class="btn btn-outline-primary">Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        {% block content %}
+        <!-- Page-specific content will be rendered here -->
+        {% endblock %}
+    </div>
+
+    <!-- Global Footer Section -->
+    <footer class="mt-auto bg-light py-3">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2024 Blog Platform. All Rights Reserved.</p>
+            <p class="small">Built with Django and Bootstrap.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (for responsive behaviors) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
