@@ -1,0 +1,5 @@
+Django>=5.0
+djangorestframework  # If using Django REST framework
+psycopg2-binary  # If using PostgreSQL
+Pillow  # If using images
+gunicorn  # If deploying with Gunicorn
